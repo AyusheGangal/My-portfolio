@@ -626,6 +626,74 @@ span.ds-department {
 }
 
 
+/* skills */
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar {
+    position: relative;
+    border: 2px solid #e75d44;
+    border-radius: 20px;
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #e75d44;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+#people-bar {
+    animation: people-fill 2s forwards;
+}
+
+@keyframes people-fill {
+    100% {
+        width: 100%;
+    }
+}
+
+#com-bar {
+    animation: com-fill 2s forwards;
+}
+
+@keyframes com-fill {
+    100% {
+        width: 96%;
+    }
+}
+
+#think-bar {
+    animation: think-fill 2s forwards;
+}
+
+@keyframes think-fill {
+    100% {
+        width: 95%;
+    }
+}
+
+#leader-bar {
+    animation: leader-fill 2s forwards;
+}
+
+@keyframes leader-fill {
+    100% {
+        width: 96%;
+    }
+}
+
+
 /*-----------------------------------------------------------------
   5. >>> Footer Style
 ----------------------------------------------------------------*/
