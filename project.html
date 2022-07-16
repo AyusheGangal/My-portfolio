@@ -31,46 +31,227 @@
                     <div class="ds-case-studies ds-case-studies-details ds-about-section text-center">
                         <h2 class="ds-heading-inner ds-boder_text"><span>Mental Health in Tech</span></h2>
                         <div class="text-center ds-back-home">
-                            <a class="ds-back-to-home" href="index.html"><i class="ri-home-8-line"></i></a>
+                            <a class="ds-back-to-home" href="https://github.com/AyusheGangal/Mental-Health-in-Tech" target="_blank"><i class="ri-github-fill"></i></a>
                         </div>
                         <section class="ds-case-studies-list text-left">
 
                             <div class="row">
                                 <div class="col-12 col-sm-12  col-md-12  col-lg-12  col-xl-12  col-xxl-12">
-                                    <h3 class="ds-hedding">Implementation of Replicated SeeDB for Smart Recommendations for Visualizations</h3>
+                                    <h3 class="ds-hedding">Implementation of Replicated SeeDB for Smart Recommendation of Visualizations</h3>
                                     <span class="ds-tools">Python, PostgreSQL, Psycopg2 </span>
                                 </div>
                                 <div class="col-12 col-sm-12  col-md-12  col-lg-12  col-xl-12  col-xxl-12">
-                                    <p>This project is the implementation of the replicated SeeDB to visualize and extract knowledge from the 'Mental Health in Tech' dataset. Includes Exploratory Data Analysis and various pruning techniques for optimization.</p>
-                                    <p>It is a survey dataset that can be used to assess the mental health of people working in the technological industry. The dataset has been obtained from
-                                        <a href="https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey">Kaggle</a> and originally contains 27 features and 1259 data points. It contains attributes/questions like: Age, Gender, Country, State
-                                        (US), Are you self-employed?, Do you have history of mental illness, Have you sought treatment for a mental health condition?, Do you work remotely?, etc,.</p>
+                                    <p>This project is the implementation of the replicated SeeDB to visualize and extract knowledge from the 'Mental Health in Tech' dataset. It includes Exploratory Data Analysis and various pruning techniques for optimization.</p>
+                                    <p>The 'Mental Health in Tech' dataset is a survey dataset that can be used to assess the mental health of people working in the technological industry. The dataset has been obtained from
+                                        <a href="https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey" target="_blank">Kaggle</a> and originally contains 27 features and 1259 data points. It contains attributes/questions like:<br> &emsp;&emsp;
+                                        * Age <br> &emsp;&emsp; * Gender <br> &emsp;&emsp; * Country <br> &emsp;&emsp; * State (US), Are you self-employed? <br> &emsp;&emsp; * Do you have history of mental illness? <br> &emsp;&emsp; * Have you sought
+                                        treatment for a mental health condition? <br> &emsp;&emsp; * Do you work remotely?</p>
+                                    <p>A sample of 5 datapoints is given below. The table has 5 rows and 27 columns.</p>
+                                    <div style="overflow-x:auto;">
+                                        <table border="1" class="dataframe">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Timestamp</th>
+                                                    <th>Age</th>
+                                                    <th>Gender</th>
+                                                    <th>Country</th>
+                                                    <th>state</th>
+                                                    <th>self_employed</th>
+                                                    <th>family_history</th>
+                                                    <th>treatment</th>
+                                                    <th>work_interfere</th>
+                                                    <th>no_employees</th>
+                                                    <th>remote_work</th>
+                                                    <th>tech_company</th>
+                                                    <th>benefits</th>
+                                                    <th>care_options</th>
+                                                    <th>wellness_program</th>
+                                                    <th>seek_help</th>
+                                                    <th>anonymity</th>
+                                                    <th>leave</th>
+                                                    <th>mental_health_consequence</th>
+                                                    <th>phys_health_consequence</th>
+                                                    <th>coworkers</th>
+                                                    <th>supervisor</th>
+                                                    <th>mental_health_interview</th>
+                                                    <th>phys_health_interview</th>
+                                                    <th>mental_vs_physical</th>
+                                                    <th>obs_consequence</th>
+                                                    <th>comments</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>0</th>
+                                                    <td>2014-08-27 11:29:31</td>
+                                                    <td>37</td>
+                                                    <td>Female</td>
+                                                    <td>United States</td>
+                                                    <td>IL</td>
+                                                    <td>NaN</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>Often</td>
+                                                    <td>6-25</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Not sure</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Somewhat easy</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Some of them</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>Maybe</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <td>2014-08-27 11:29:37</td>
+                                                    <td>44</td>
+                                                    <td>M</td>
+                                                    <td>United States</td>
+                                                    <td>IN</td>
+                                                    <td>NaN</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Rarely</td>
+                                                    <td>More than 1000</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Don't know</td>
+                                                    <td>No</td>
+                                                    <td>Don't know</td>
+                                                    <td>Don't know</td>
+                                                    <td>Don't know</td>
+                                                    <td>Don't know</td>
+                                                    <td>Maybe</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Don't know</td>
+                                                    <td>No</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <td>2014-08-27 11:29:44</td>
+                                                    <td>32</td>
+                                                    <td>Male</td>
+                                                    <td>Canada</td>
+                                                    <td>NaN</td>
+                                                    <td>NaN</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Rarely</td>
+                                                    <td>6-25</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Don't know</td>
+                                                    <td>Somewhat difficult</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <td>2014-08-27 11:29:46</td>
+                                                    <td>31</td>
+                                                    <td>Male</td>
+                                                    <td>United Kingdom</td>
+                                                    <td>NaN</td>
+                                                    <td>NaN</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Often</td>
+                                                    <td>26-100</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Somewhat difficult</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Some of them</td>
+                                                    <td>No</td>
+                                                    <td>Maybe</td>
+                                                    <td>Maybe</td>
+                                                    <td>No</td>
+                                                    <td>Yes</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <td>2014-08-27 11:30:22</td>
+                                                    <td>31</td>
+                                                    <td>Male</td>
+                                                    <td>United States</td>
+                                                    <td>TX</td>
+                                                    <td>NaN</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Never</td>
+                                                    <td>100-500</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                    <td>Don't know</td>
+                                                    <td>Don't know</td>
+                                                    <td>Don't know</td>
+                                                    <td>Don't know</td>
+                                                    <td>No</td>
+                                                    <td>No</td>
+                                                    <td>Some of them</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Yes</td>
+                                                    <td>Don't know</td>
+                                                    <td>No</td>
+                                                    <td>NaN</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                     <p>
-                                        The answers to these questions give us a feel about the possible mental health condition of the people working in the tech industry. It can also be utilized to answer some thought-provoking questions like:
-                                        <br> <b>*</b> How does the frequency of mental health illness and attitudes towards mental health vary by geographic location?
-                                        <br> <b>*</b> What are the strongest predictors of mental health illness or certain attitudes towards mental health in the workplace?
+                                        <br>The answers to these questions give us a feel about the possible mental health condition of the people working in the tech industry. It can also be utilized to answer some <b>thought-provoking</b> questions
+                                        like:
+                                        <br> &emsp;&emsp; * How does the frequency of mental health illness vary by geographic location?
+                                        <br> &emsp;&emsp; * What are the strongest predictors of mental health illness in the workplace?
+                                        <br> &emsp;&emsp; * How does the attitudes towards mental health vary by geographic location?
+                                        <br> &emsp;&emsp; * What are the strongest predictors of certain attitudes towards mental health in the workplace?
                                     </p>
                                 </div>
                             </div>
+                            <p>Four sets of target-reference view queries have been implemented, that is, [self_employed, not_self_employed], [family_history, no_family_history], [treatment, no_treatment] and [remote_work, no_remote_work]. Therefore, a total
+                                of 4*2 = 8 tables were generated, and four sets of values were defined for Dimension Attributes A. The top-3 recommendations for the visualizations on this dataset are:</p>
                         </section>
                         <section class="ds-case-studies-list text-left">
-                            <figure><img src="assets/images/case-studies-2.jpg" alt="" width="1940" height="1000"></figure>
-                            <div class="row">
-                                <div class="col-12 col-sm-12  col-md-12  col-lg-12  col-xl-12  col-xxl-12">
-                                    <h3 class="ds-hedding">Brand title</h3>
-                                </div>
-                                <div class="col-12 col-sm-12  col-md-12  col-lg-12  col-xl-12  col-xxl-12">
-                                    <p>Phasellus non faucibus purus, a venenatis diam. In faucibus orci mauris, porttitor egestas diam elementum non. Vestibulum non metus tempus, sagittis libero sed, euismod purus. Cras dolor nulla, hendrerit vitae libero
-                                        eu, finibus ultricies dolor. </p>
-                                    <p>Curabitur quis tortor sit amet ligula lobortis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ut turpis eget urna egestas maximus. </p>
-                                </div>
-                            </div>
-                            <div class="ds-image-gallery">
-                                <figure><img src="assets/images/case-studies-1.jpg" alt="" width="1940" height="1000"></figure>
-                                <figure><img src="assets/images/case-studies-2.jpg" alt="" width="1940" height="1000"></figure>
-                            </div>
-                            <p>Phasellus non faucibus purus, a venenatis diam. In faucibus orci mauris, porttitor egestas diam elementum non. Vestibulum non metus tempus, sagittis libero sed, euismod purus. Cras dolor nulla, hendrerit vitae libero eu, finibus
-                                ultricies dolor. </p>
+                            <figure><img src="assets/images/full.png" alt="" width="1940" height="1000"></figure>
+                            <p>The figure (A) shows the top-3 recommended visualizations for [self_employed, not_self_employed], (B) shows for [family_history, no_family_history], (C) for [treatment, no_treatment], and (D) for [remote_work, no_remote_work].
+                                Read more on my <a href="https://github.com/AyusheGangal/Mental-Health-in-Tech" target="_blank">GitHub.</a></p>
                         </section>
                     </div>
                     <!-- Case Studies -->
@@ -85,18 +266,14 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-12  col-md-12  col-lg-10  col-xl-10  col-xxl-10">
                     <section class="ds-lets_section">
-                        <h4>Let’s Talk.</h4>
-                        <span>Have a project or question? Send me a message.</span>
+                        <h4>Like what you see?</h4>
+                        <span>Let's get in touch! Connect with me on </span>
+                        <a href="https://www.linkedin.com/in/ayushegangal/" class="ds-email ds-boder_text"><span><h5>LinkedIn.</h5></span></a>
+                        <span><br>Or shoot me an email at</span>
                     </section>
                     <div class="ds-email_social">
-                        <a href="mailto:hey@kaira.com" class="ds-email ds-boder_text"><span>hey@kaira.com</span></a>
-                        <ul class="ds-social">
-                            <li><a href="#" target="_blanck"><i class="ri-dribbble-line"></i></a></li>
-                            <li><a href="#" target="_blanck"><i class="ri-instagram-line"></i></a></li>
-                            <li><a href="#" target="_blanck"><i class="ri-twitter-line"></i></a></li>
-                        </ul>
+                        <a href="mailto:agangal@umass.edu" class="ds-email ds-boder_text"><span>agangal@umass.edu</span></a>
                     </div>
-                    <span class="ds-copyright">© 2021 All right reserved.<br><a href="https://www.designstub.com/" target="_blanck">Free minimal bootstrap template by Designstub.</span>
                 </div>
             </div>
         </div>

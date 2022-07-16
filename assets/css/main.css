@@ -779,6 +779,10 @@ span.ds-department {
     text-decoration: underline;
 }
 
+tr>*+* {
+    padding-left: 4em;
+}
+
 
 /*-------------------------------------------------------------------------------
  XS Style @media (max-width: 767px) 
