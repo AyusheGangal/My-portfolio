@@ -416,7 +416,7 @@ img {
 
 .ds-project-list-loop-inner {
     background-color: #FFF;
-    box-shadow: 0px 0px 1px #cecaca;
+    box-shadow: 0px 0px 5px #cecaca;
     transition-delay: 0s;
     transition-duration: 0.8s;
     transition-property: all;
