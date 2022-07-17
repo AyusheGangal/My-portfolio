@@ -244,7 +244,7 @@ img {
     width: 110%;
     z-index: 5;
     background-color: #FFF;
-    padding: 8px 0;
+    padding: 30px 0;
     transition-delay: 0s;
     transition-duration: 0.4s;
     transition-property: all;
@@ -275,12 +275,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #000;
     border-radius: 4px;
     color: #FFF;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     margin-right: 12px;
@@ -308,14 +308,14 @@ img {
 .ds-social li a {
     border-radius: 100%;
     color: #FFF;
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     background-color: #e75d44;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .ds-social li a:hover {
@@ -335,6 +335,7 @@ img {
 
 .ds-heading,
 .ds-heading-inner {
+    margin-top: -50px;
     font-size: 3.500rem;
     line-height: 5rem;
     margin-bottom: 40px;
@@ -349,7 +350,7 @@ img {
 }
 
 .ds-banner-section figure {
-    margin-top: -25px;
+    margin-top: -75px;
     margin-bottom: 0px;
 }
 
