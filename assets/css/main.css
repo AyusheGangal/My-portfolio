@@ -239,12 +239,12 @@ img {
 ----------------------------------------------------------------*/
 
 .ds-header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 85%;
+    width: 110%;
     z-index: 5;
     background-color: #FFF;
-    padding: 40px 0;
+    padding: 8px 0;
     transition-delay: 0s;
     transition-duration: 0.4s;
     transition-property: all;
@@ -275,8 +275,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #000;
     border-radius: 4px;
     color: #FFF;
@@ -335,21 +335,22 @@ img {
 
 .ds-heading,
 .ds-heading-inner {
-    font-size: 4.000rem;
-    line-height: 6rem;
-    margin-bottom: 3.1875rem;
+    font-size: 3.500rem;
+    line-height: 5rem;
+    margin-bottom: 40px;
 }
 
 .ds-heading span {
-    border-bottom: 15px solid #A6F3E7
+    border-bottom: 12px solid #A6F3E7
 }
 
 .ds-heading span span {
-    border-bottom: 15px solid #A6F3E7
+    border-bottom: 12px solid #A6F3E7
 }
 
 .ds-banner-section figure {
-    margin-bottom: var(--margin-54)
+    margin-top: -25px;
+    margin-bottom: 0px;
 }
 
 .ds-banner-section p {
@@ -384,7 +385,7 @@ img {
     padding: 1.125rem 3.625rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .ds-button-2:hover {
@@ -581,7 +582,7 @@ span.ds-department {
 }
 
 .ds-hedding {
-    font-size: var(--font_48);
+    font-size: 35px;
     margin-bottom: var(--font_14);
 }
 
