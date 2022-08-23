@@ -671,7 +671,7 @@ span.ds-department {
 
 @keyframes com-fill {
     100% {
-        width: 96%;
+        width: 100%;
     }
 }
 
@@ -681,7 +681,7 @@ span.ds-department {
 
 @keyframes think-fill {
     100% {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -691,7 +691,7 @@ span.ds-department {
 
 @keyframes leader-fill {
     100% {
-        width: 96%;
+        width: 100%;
     }
 }
 
